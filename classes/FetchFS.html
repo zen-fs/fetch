@@ -16,7 +16,7 @@
 <li><a href="FetchFS.html">FetchFS</a></li></ul>
 <h1>Class FetchFS</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>A simple filesystem backed by HTTP downloads.</p>
+<div class="tsd-comment tsd-typography"><p>A simple filesystem backed by HTTP using the fetch API.</p>
 <p>Listings objects look like the following:</p>
 <pre><code class="language-json"><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-7">&quot;home&quot;</span><span class="hl-1">: {</span><br/><span class="hl-1">    </span><span class="hl-7">&quot;jvilk&quot;</span><span class="hl-1">: {</span><br/><span class="hl-1">      </span><span class="hl-7">&quot;someFile.txt&quot;</span><span class="hl-1">: </span><span class="hl-5">null</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-7">&quot;someDir&quot;</span><span class="hl-1">: {</span><br/><span class="hl-1">        </span><span class="hl-8">// Empty directory</span><br/><span class="hl-1">      }</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
 </code><button>Copy</button></pre>
@@ -26,11 +26,11 @@
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="tsd-signature-type ">ReadonlyAsyncFileSystem</span>
+<li><span class="tsd-signature-type ">AsyncFileIndexFS</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span>
 <ul class="tsd-hierarchy">
 <li><span class="target">FetchFS</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L92">src/Fetch.ts:92</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L90">src/Fetch.ts:90</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -42,20 +42,16 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="FetchFS.html#_index" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a>
-<a href="FetchFS.html#_ready" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_ready</span></a>
+<div class="tsd-index-list"><a href="FetchFS.html#_index" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a>
+<a href="FetchFS.html#_init" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_init</span></a>
 <a href="FetchFS.html#prefixUrl" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>prefix<wbr/>Url</span></a>
-</div></section>
-<section class="tsd-index-section">
-<h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="FetchFS.html#metadata" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>metadata</span></a>
-<a href="FetchFS.html#Name" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>Name</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="FetchFS.html#_fetchFile" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_fetch<wbr/>File</span></a>
 <a href="FetchFS.html#_fetchSize" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_fetch<wbr/>Size</span></a>
 <a href="FetchFS.html#_getRemotePath" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Remote<wbr/>Path</span></a>
+<a href="FetchFS.html#_initialize" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_initialize</span></a>
 <a href="FetchFS.html#createFile" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a>
 <a href="FetchFS.html#createFileSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a>
 <a href="FetchFS.html#empty" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>empty</span></a>
@@ -63,22 +59,24 @@
 <a href="FetchFS.html#existsSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists<wbr/>Sync</span></a>
 <a href="FetchFS.html#link" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a>
 <a href="FetchFS.html#linkSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a>
-<a href="FetchFS.html#loadIndex" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>load<wbr/>Index</span></a>
+<a href="FetchFS.html#metadata" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>metadata</span></a>
 <a href="FetchFS.html#mkdir" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a>
 <a href="FetchFS.html#mkdirSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a>
-<a href="FetchFS.html#openFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a>
+<a href="FetchFS.html#openFile" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a>
+<a href="FetchFS.html#openFileInode" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Inode</span></a>
+<a href="FetchFS.html#openFileInodeSync" class="tsd-index-link tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Inode<wbr/>Sync</span></a>
 <a href="FetchFS.html#openFileSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a>
-<a href="FetchFS.html#openSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>Sync</span></a>
 <a href="FetchFS.html#preloadFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>preload<wbr/>File</span></a>
-<a href="FetchFS.html#readFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read<wbr/>File</span></a>
-<a href="FetchFS.html#readdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a>
+<a href="FetchFS.html#readdir" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a>
 <a href="FetchFS.html#readdirSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a>
 <a href="FetchFS.html#ready" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a>
 <a href="FetchFS.html#rename" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a>
 <a href="FetchFS.html#renameSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a>
 <a href="FetchFS.html#rmdir" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a>
 <a href="FetchFS.html#rmdirSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a>
-<a href="FetchFS.html#stat" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a>
+<a href="FetchFS.html#stat" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a>
+<a href="FetchFS.html#statFileInode" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>File<wbr/>Inode</span></a>
+<a href="FetchFS.html#statFileInodeSync" class="tsd-index-link tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>File<wbr/>Inode<wbr/>Sync</span></a>
 <a href="FetchFS.html#statSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a>
 <a href="FetchFS.html#sync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a>
 <a href="FetchFS.html#syncSync" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a>
@@ -98,46 +96,27 @@
 <li>
 <h5><span class="tsd-kind-parameter">__namedParameters</span>: <a href="../interfaces/FetchOptions.html" class="tsd-signature-type tsd-kind-interface">FetchOptions</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a></h4><aside class="tsd-sources">
-<p>Overrides ReadonlyAsyncFileSystem.constructor</p>
+<p>Overrides AsyncFileIndexFS&lt;Stats&gt;.constructor</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L111">src/Fetch.ts:111</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L114">src/Fetch.ts:114</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_index" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_index</span><a href="#_index" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_index</span><span class="tsd-signature-symbol">:</span> <a href="FileIndex.html" class="tsd-signature-type tsd-kind-class">FileIndex</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
+<section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="_index" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>_index</span><a href="#_index" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_index</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">FileIndex</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
+<p>Inherited from AsyncFileIndexFS._index</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L94">src/Fetch.ts:94</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected"><a id="_ready" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_ready</span><a href="#_ready" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_ready</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:232</li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_init" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_init</span><a href="#_init" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_init</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L96">src/Fetch.ts:96</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L93">src/Fetch.ts:93</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="prefixUrl" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>prefix<wbr/>Url</span><a href="#prefixUrl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">prefix<wbr/>Url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L93">src/Fetch.ts:93</a></li></ul></aside></section></section>
-<section class="tsd-panel-group tsd-member-group">
-<h2>Accessors</h2>
-<section class="tsd-panel tsd-member"><a id="metadata" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>metadata</span><a href="#metadata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature" id="metadata.metadata-1"><span class="tsd-signature-symbol">get</span> metadata<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">FileSystemMetadata</span></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">FileSystemMetadata</span></h4><aside class="tsd-sources">
-<p>Overrides ReadonlyAsyncFileSystem.metadata</p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L126">src/Fetch.ts:126</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="Name" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>Name</span><a href="#Name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited tsd-is-external">
-<li class="tsd-signature" id="Name.Name-1"><span class="tsd-signature-symbol">get</span> Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.Name</p>
-<ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:49</li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L91">src/Fetch.ts:91</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_fetchFile" class="tsd-anchor"></a>
@@ -157,7 +136,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L247">src/Fetch.ts:247</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L193">src/Fetch.ts:193</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="_fetchFile._fetchFile-2"><span class="tsd-kind-call-signature">_fetch<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">type</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><a href="#_fetchFile._fetchFile-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -169,7 +148,7 @@
 <h5><span class="tsd-kind-parameter">type</span>: <span class="tsd-signature-type">&quot;json&quot;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L248">src/Fetch.ts:248</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L194">src/Fetch.ts:194</a></li></ul></aside></li>
 <li class="tsd-signature tsd-anchor-link" id="_fetchFile._fetchFile-3"><span class="tsd-kind-call-signature">_fetch<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">type</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><a href="#_fetchFile._fetchFile-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -181,7 +160,7 @@
 <h5><span class="tsd-kind-parameter">type</span>: <span class="tsd-signature-type">&quot;buffer&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;json&quot;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L249">src/Fetch.ts:249</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L195">src/Fetch.ts:195</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_fetchSize" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_fetch<wbr/>Size</span><a href="#_fetchSize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
@@ -197,7 +176,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L257">src/Fetch.ts:257</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L203">src/Fetch.ts:203</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_getRemotePath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_get<wbr/>Remote<wbr/>Path</span><a href="#_getRemotePath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -210,7 +189,20 @@
 <h5><span class="tsd-kind-parameter">filePath</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L237">src/Fetch.ts:237</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L183">src/Fetch.ts:183</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_initialize" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_initialize</span><a href="#_initialize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_initialize._initialize-1"><span class="tsd-kind-call-signature">_initialize</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#_initialize._initialize-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">ListingTree</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L95">src/Fetch.ts:95</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="createFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>File</span><a href="#createFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -228,9 +220,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">File</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.createFile</p>
+<p>Inherited from AsyncFileIndexFS.createFile</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:198</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:160</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="createFileSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>File<wbr/>Sync</span><a href="#createFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -248,9 +240,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">File</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.createFileSync</p>
+<p>Inherited from AsyncFileIndexFS.createFileSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:186</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:222</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="empty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>empty</span><a href="#empty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -258,7 +250,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L134">src/Fetch.ts:134</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L134">src/Fetch.ts:134</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="exists" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>exists</span><a href="#exists" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -275,9 +267,9 @@
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.exists</p>
+<p>Inherited from AsyncFileIndexFS.exists</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:135</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:134</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="existsSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>exists<wbr/>Sync</span><a href="#existsSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -294,9 +286,9 @@
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.existsSync</p>
+<p>Inherited from AsyncFileIndexFS.existsSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:139</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:138</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="link" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>link</span><a href="#link" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -312,9 +304,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.link</p>
+<p>Inherited from AsyncFileIndexFS.link</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:202</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:168</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="linkSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>link<wbr/>Sync</span><a href="#linkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -330,22 +322,18 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.linkSync</p>
+<p>Inherited from AsyncFileIndexFS.linkSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:193</li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="loadIndex" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>load<wbr/>Index</span><a href="#loadIndex" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:228</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="metadata" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>metadata</span><a href="#metadata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="loadIndex.loadIndex-1"><span class="tsd-kind-call-signature">load<wbr/>Index</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">index</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#loadIndex.loadIndex-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="metadata.metadata-1"><span class="tsd-kind-call-signature">metadata</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">FileSystemMetadata</span><a href="#metadata.metadata-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">index</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../types/ListingTree.html" class="tsd-signature-type tsd-kind-type-alias">ListingTree</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">FileSystemMetadata</span></h4><aside class="tsd-sources">
+<p>Overrides AsyncFileIndexFS.metadata</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L103">src/Fetch.ts:103</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L126">src/Fetch.ts:126</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="mkdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>mkdir</span><a href="#mkdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -361,9 +349,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.mkdir</p>
+<p>Inherited from AsyncFileIndexFS.mkdir</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:201</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:166</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="mkdirSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>mkdir<wbr/>Sync</span><a href="#mkdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -379,12 +367,12 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.mkdirSync</p>
+<p>Inherited from AsyncFileIndexFS.mkdirSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:191</li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="openFile" class="tsd-anchor"></a>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:226</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="openFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>open<wbr/>File</span><a href="#openFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited tsd-is-external">
 <li class="tsd-signature tsd-anchor-link" id="openFile.openFile-1"><span class="tsd-kind-call-signature">open<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#openFile.openFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -397,9 +385,36 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Overrides ReadonlyAsyncFileSystem.openFile</p>
+<p>Inherited from AsyncFileIndexFS.openFile</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L185">src/Fetch.ts:185</a></li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:178</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="openFileInode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>open<wbr/>File<wbr/>Inode</span><a href="#openFileInode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="openFileInode.openFileInode-1"><span class="tsd-kind-call-signature">open<wbr/>File<wbr/>Inode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">inode</span>, <span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><a href="#openFileInode.openFileInode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">inode</span>: <span class="tsd-signature-type ">IndexFileInode</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">flag</span>: <span class="tsd-signature-type ">FileFlag</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Overrides AsyncFileIndexFS.openFileInode</p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L169">src/Fetch.ts:169</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited tsd-is-external"><a id="openFileInodeSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>open<wbr/>File<wbr/>Inode<wbr/>Sync</span><a href="#openFileInodeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="openFileInodeSync.openFileInodeSync-1"><span class="tsd-kind-call-signature">open<wbr/>File<wbr/>Inode<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span><a href="#openFileInodeSync.openFileInodeSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Inherited from AsyncFileIndexFS.openFileInodeSync</p>
+<ul>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:234</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="openFileSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>open<wbr/>File<wbr/>Sync</span><a href="#openFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -415,13 +430,10 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">File</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.openFileSync</p>
+<p>Inherited from AsyncFileIndexFS.openFileSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:188</li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="openSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>open<wbr/>Sync</span><a href="#openSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited tsd-is-external">
-<li class="tsd-signature tsd-anchor-link" id="openSync.openSync-1"><span class="tsd-kind-call-signature">open<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flags</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">File</span><a href="#openSync.openSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:223</li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="openFileSync.openFileSync-2"><span class="tsd-kind-call-signature">open<wbr/>File<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span><a href="#openFileSync.openFileSync-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -429,15 +441,13 @@
 <li>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
-<h5><span class="tsd-kind-parameter">flags</span>: <span class="tsd-signature-type ">FileFlag</span></h5></li>
-<li>
-<h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">flag</span>: <span class="tsd-signature-type ">FileFlag</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">File</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.openSync</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">NoSyncFile</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Inherited from AsyncFileIndexFS.openFileSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:187</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:179</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="preloadFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>preload<wbr/>File</span><a href="#preloadFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -457,43 +467,21 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L145">src/Fetch.ts:145</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="readFile" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>read<wbr/>File</span><a href="#readFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="readFile.readFile-1"><span class="tsd-kind-call-signature">read<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">fname</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span><a href="#readFile.readFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>We have the entire file as a buffer; optimize readFile.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">fname</span>: <span class="tsd-signature-type">string</span></h5></li>
-<li>
-<h5><span class="tsd-kind-parameter">flag</span>: <span class="tsd-signature-type ">FileFlag</span></h5></li>
-<li>
-<h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L227">src/Fetch.ts:227</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="readdir" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L145">src/Fetch.ts:145</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="readdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>readdir</span><a href="#readdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="readdir.readdir-1"><span class="tsd-kind-call-signature">readdir</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#readdir.readdir-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<ul class="tsd-signatures tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="readdir.readdir-1"><span class="tsd-kind-call-signature">readdir</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#readdir.readdir-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
-<li>
-<h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Overrides ReadonlyAsyncFileSystem.readdir</p>
+<p>Inherited from AsyncFileIndexFS.readdir</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L220">src/Fetch.ts:220</a></li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:180</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="readdirSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>readdir<wbr/>Sync</span><a href="#readdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -507,18 +495,29 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.readdirSync</p>
+<p>Inherited from AsyncFileIndexFS.readdirSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:192</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:227</li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="readdirSync.readdirSync-2"><span class="tsd-kind-call-signature">readdir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><a href="#readdirSync.readdirSync-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
+<p>Inherited from AsyncFileIndexFS.readdirSync</p>
+<ul>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:181</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ready" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ready</span><a href="#ready" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="ready.ready-1"><span class="tsd-kind-call-signature">ready</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span><a href="#ready.ready-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="FetchFS.html" class="tsd-signature-type tsd-kind-class">FetchFS</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Overrides ReadonlyAsyncFileSystem.ready</p>
+<p>Overrides AsyncFileIndexFS.ready</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L98">src/Fetch.ts:98</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L109">src/Fetch.ts:109</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="rename" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rename</span><a href="#rename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -534,9 +533,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.rename</p>
+<p>Inherited from AsyncFileIndexFS.rename</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:197</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:158</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="renameSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rename<wbr/>Sync</span><a href="#renameSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -552,9 +551,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.renameSync</p>
+<p>Inherited from AsyncFileIndexFS.renameSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:184</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:220</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="rmdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rmdir</span><a href="#rmdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -568,9 +567,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.rmdir</p>
+<p>Inherited from AsyncFileIndexFS.rmdir</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:200</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:164</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="rmdirSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rmdir<wbr/>Sync</span><a href="#rmdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -584,25 +583,48 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.rmdirSync</p>
+<p>Inherited from AsyncFileIndexFS.rmdirSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:190</li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="stat" class="tsd-anchor"></a>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:225</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="stat" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat</span><a href="#stat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="stat.stat-1"><span class="tsd-kind-call-signature">stat</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span><a href="#stat.stat-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<ul class="tsd-signatures tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="stat.stat-1"><span class="tsd-kind-call-signature">stat</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span><a href="#stat.stat-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
-<li>
-<h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Overrides ReadonlyAsyncFileSystem.stat</p>
+<p>Inherited from AsyncFileIndexFS.stat</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/94439e3/src/Fetch.ts#L159">src/Fetch.ts:159</a></li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:176</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="statFileInode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>stat<wbr/>File<wbr/>Inode</span><a href="#statFileInode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="statFileInode.statFileInode-1"><span class="tsd-kind-call-signature">stat<wbr/>File<wbr/>Inode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">inode</span>, <span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span><a href="#statFileInode.statFileInode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">inode</span>: <span class="tsd-signature-type ">IndexFileInode</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Overrides AsyncFileIndexFS.statFileInode</p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/fetch/blob/c38a388/src/Fetch.ts#L159">src/Fetch.ts:159</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited tsd-is-external"><a id="statFileInodeSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>stat<wbr/>File<wbr/>Inode<wbr/>Sync</span><a href="#statFileInodeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="statFileInodeSync.statFileInodeSync-1"><span class="tsd-kind-call-signature">stat<wbr/>File<wbr/>Inode<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Stats</span><a href="#statFileInodeSync.statFileInodeSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Stats</span></h4><aside class="tsd-sources">
+<p>Inherited from AsyncFileIndexFS.statFileInodeSync</p>
+<ul>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:233</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="statSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat<wbr/>Sync</span><a href="#statSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -616,9 +638,20 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Stats</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.statSync</p>
+<p>Inherited from AsyncFileIndexFS.statSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:185</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:221</li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="statSync.statSync-2"><span class="tsd-kind-call-signature">stat<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Stats</span><a href="#statSync.statSync-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Stats</span></h4><aside class="tsd-sources">
+<p>Inherited from AsyncFileIndexFS.statSync</p>
+<ul>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:177</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="sync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync</span><a href="#sync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -634,9 +667,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">stats</span>: <span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.sync</p>
+<p>Inherited from AsyncFileIndexFS.sync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:203</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:170</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="syncSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync<wbr/>Sync</span><a href="#syncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -652,9 +685,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">stats</span>: <span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Stats</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.syncSync</p>
+<p>Inherited from AsyncFileIndexFS.syncSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:194</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:229</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="unlink" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unlink</span><a href="#unlink" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -668,9 +701,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.unlink</p>
+<p>Inherited from AsyncFileIndexFS.unlink</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:199</li></ul></aside></li></ul></section>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:162</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="unlinkSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unlink<wbr/>Sync</span><a href="#unlinkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -684,9 +717,9 @@
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <span class="tsd-signature-type ">Cred</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
-<p>Inherited from ReadonlyAsyncFileSystem.unlinkSync</p>
+<p>Inherited from AsyncFileIndexFS.unlinkSync</p>
 <ul>
-<li>Defined in node_modules/@browserfs/core/dist/filesystem.d.ts:189</li></ul></aside></li></ul></section></section></div>
+<li>Defined in node_modules/@browserfs/core/dist/FileIndex.d.ts:224</li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -707,14 +740,13 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#_index" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a></li>
-<li><a href="#_ready" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_ready</span></a></li>
+<li><a href="#_index" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a></li>
+<li><a href="#_init" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_init</span></a></li>
 <li><a href="#prefixUrl" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>prefix<wbr/>Url</span></a></li>
-<li><a href="#metadata" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>metadata</span></a></li>
-<li><a href="#Name" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>Name</span></a></li>
 <li><a href="#_fetchFile" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_fetch<wbr/>File</span></a></li>
 <li><a href="#_fetchSize" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_fetch<wbr/>Size</span></a></li>
 <li><a href="#_getRemotePath" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_get<wbr/>Remote<wbr/>Path</span></a></li>
+<li><a href="#_initialize" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_initialize</span></a></li>
 <li><a href="#createFile" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a></li>
 <li><a href="#createFileSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a></li>
 <li><a href="#empty" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>empty</span></a></li>
@@ -722,22 +754,24 @@
 <li><a href="#existsSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists<wbr/>Sync</span></a></li>
 <li><a href="#link" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a></li>
 <li><a href="#linkSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a></li>
-<li><a href="#loadIndex" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>load<wbr/>Index</span></a></li>
+<li><a href="#metadata" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>metadata</span></a></li>
 <li><a href="#mkdir" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a></li>
 <li><a href="#mkdirSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a></li>
-<li><a href="#openFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a></li>
+<li><a href="#openFile" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a></li>
+<li><a href="#openFileInode" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Inode</span></a></li>
+<li><a href="#openFileInodeSync" class="tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Inode<wbr/>Sync</span></a></li>
 <li><a href="#openFileSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a></li>
-<li><a href="#openSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>Sync</span></a></li>
 <li><a href="#preloadFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>preload<wbr/>File</span></a></li>
-<li><a href="#readFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read<wbr/>File</span></a></li>
-<li><a href="#readdir" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a></li>
+<li><a href="#readdir" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a></li>
 <li><a href="#readdirSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a></li>
 <li><a href="#ready" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a></li>
 <li><a href="#rename" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a></li>
 <li><a href="#renameSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a></li>
 <li><a href="#rmdir" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a></li>
 <li><a href="#rmdirSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a></li>
-<li><a href="#stat" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a></li>
+<li><a href="#stat" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a></li>
+<li><a href="#statFileInode" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>File<wbr/>Inode</span></a></li>
+<li><a href="#statFileInodeSync" class="tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>File<wbr/>Inode<wbr/>Sync</span></a></li>
 <li><a href="#statSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a></li>
 <li><a href="#sync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a></li>
 <li><a href="#syncSync" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a></li>
@@ -747,12 +781,7 @@
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS Fetch</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
 <li><a href="FetchFS.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FetchFS</a></li>
-<li><a href="FileIndex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileIndex</a></li>
-<li><a href="IndexDirInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexDirInode</a></li>
-<li><a href="IndexFileInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexFileInode</a></li>
-<li><a href="IndexInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexInode</a></li>
 <li><a href="../interfaces/FetchOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>FetchOptions</a></li>
-<li><a href="../types/ListingTree.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2097152"></use></svg>ListingTree</a></li>
 <li><a href="../variables/Fetch.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-32"></use></svg>Fetch</a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>

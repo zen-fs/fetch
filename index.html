@@ -13,14 +13,16 @@
 <div class="tsd-page-title">
 <h2>BrowserFS Fetch</h2></div>
 <div class="tsd-panel tsd-typography"><a id="md:browserfs-fetch-backend" class="tsd-anchor"></a><h1><a href="#md:browserfs-fetch-backend">BrowserFS Fetch Backend</a></h1><p>A <a href="https://github.com/browser-fs/core">BrowserFS</a> backend for fetching files using HTTP.</p>
-<p>Please read the BrowserFS documentation!</p>
-<p>For more information, see the <a href="https://browser-fs.github.io/fetch">API documentation</a>.</p>
-<a id="md:installing" class="tsd-anchor"></a><h2><a href="#md:installing">Installing</a></h2><pre><code class="language-sh"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">@browserfs/fetch</span>
-</code><button>Copy</button></pre>
-<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><blockquote>
-<p>🛈 The examples are written in ESM. If you are using CJS, you can <code>require</code> the package. If running in a browser you can add a script tag to your HTML pointing to the <code>browser.min.js</code> and use BrowserFS Fetch via the global <code>BrowserFS_Fetch</code> object.</p>
+<blockquote>
+<p>[!IMPORTANT]
+Please read the BrowserFS core documentation</p>
 </blockquote>
-<pre><code class="language-js"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">configure</span><span class="hl-1">, </span><span class="hl-4">fs</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@browserfs/core&#39;</span><span class="hl-1">;</span><br/><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">Fetch</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@browserfs/fetch&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-0">configure</span><span class="hl-1">({ </span><span class="hl-4">backend:</span><span class="hl-1"> </span><span class="hl-4">Fetch</span><span class="hl-1">, </span><span class="hl-4">baseUrl:</span><span class="hl-1"> </span><span class="hl-2">&#39;https://example.com/&#39;</span><span class="hl-1"> });</span><br/><br/><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">contents</span><span class="hl-1"> = </span><span class="hl-3">await</span><span class="hl-1"> </span><span class="hl-4">fs</span><span class="hl-1">.</span><span class="hl-0">readFile</span><span class="hl-1">(</span><span class="hl-2">&#39;/test.txt&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;utf-8&#39;</span><span class="hl-1">);</span><br/><span class="hl-4">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-4">contents</span><span class="hl-1">);</span>
+<p>For more information, see the <a href="https://browser-fs.github.io/fetch">API documentation</a>.</p>
+<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><blockquote>
+<p>[!NOTE]
+The examples are written in ESM. If you are using CJS, you can <code>require</code> the package. If running in a browser you can add a script tag to your HTML pointing to the <code>browser.min.js</code> and use BrowserFS Fetch via the global <code>BrowserFS_Fetch</code> object.</p>
+</blockquote>
+<pre><code class="language-js"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">configure</span><span class="hl-1">, </span><span class="hl-2">fs</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;@browserfs/core&#39;</span><span class="hl-1">;</span><br/><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">Fetch</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;@browserfs/fetch&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-4">configure</span><span class="hl-1">({ </span><span class="hl-2">backend:</span><span class="hl-1"> </span><span class="hl-2">Fetch</span><span class="hl-1">, </span><span class="hl-2">baseUrl:</span><span class="hl-1"> </span><span class="hl-3">&#39;https://example.com/&#39;</span><span class="hl-1"> });</span><br/><br/><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">contents</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-2">fs</span><span class="hl-1">.</span><span class="hl-4">readFile</span><span class="hl-1">(</span><span class="hl-3">&#39;/test.txt&#39;</span><span class="hl-1">, </span><span class="hl-3">&#39;utf-8&#39;</span><span class="hl-1">);</span><br/><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-4">log</span><span class="hl-1">(</span><span class="hl-2">contents</span><span class="hl-1">);</span>
 </code><button>Copy</button></pre>
 </div></div>
 <div class="col-sidebar">
@@ -47,7 +49,6 @@
 <li><a href="#md:browserfs-fetch-backend"><span>BrowserFS <wbr/>Fetch <wbr/>Backend</span></a></li>
 <li>
 <ul>
-<li><a href="#md:installing"><span>Installing</span></a></li>
 <li><a href="#md:usage"><span>Usage</span></a></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS Fetch</span></a>
